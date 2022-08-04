@@ -1,0 +1,39 @@
+<div>
+    <div>
+        <h2>Get Token: </h2>
+        <p><strong>アクセストークン: </strong> {{accessToken}}</p>
+        <p>
+            <strong>scope: </strong><input type="text" #requestScope/>
+        </p>
+        <button type="button" (click)="getToken()">トークン取得</button>
+    </div>
+    <div>
+        <h2>Call API(GET): </h2>
+        <p><strong>API Response: </strong> {{responseGet}}</p>
+        <p>
+            <strong>URL: </strong><input type="text" #apiUrlGet/>
+        </p>
+        <button type="button" (click)="callGetApi()">API実行(GET)</button>
+    </div>
+    <div>
+        <h2>Call API(POST): </h2>
+        <p><strong>API Response: </strong> {{responsePost}}</p>
+        <p>
+            <strong>URL: </strong><input type="text" #apiUrlPost/>
+        </p>
+        <p>
+            <strong>Json: </strong><input type="text" #postJson/>
+        </p>
+        <button type="button" (click)="callPostApi()">API実行(POST)</button>
+    </div>
+    <br>
+    <div>
+        <h2>GraphAPI Me: </h2>
+        <p><strong>Response: </strong> {{profile}}</p>
+    </div>
+    <br>
+    <div>
+        <h2>Account: </h2>
+        <p><strong>Account Info All: </strong> {{accountInfoJson}}</p>
+    </div>
+</div>
